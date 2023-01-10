@@ -1,14 +1,22 @@
-# Welcome to your CDK TypeScript project
+# CICD Workflow
 
-This is a blank project for CDK development with TypeScript.
+## The CI/CD process using AWS CDK is divided into two stages.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+1. Configuration Stage
+- AWS Configuration
+- CDK Synth
+- CDK Bootstrap (CloudFormation)
+- CDK Deploy
 
-## Useful commands
+2. CI/CD Stage
+- Push service to github
+- Polling the gihub source through Codebuild to docker image the service, and storing the image in the ECR.
+- Deploy images from ECR to Fargate service
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+---
+
+## The image below represents the workflow.
+
+<img width="8896" alt="Reels Sequence Diagram" src="https://user-images.githubusercontent.com/32415176/211588135-c92c14c0-47e4-4852-adb4-b40b103bf9bd.png">
+
+
