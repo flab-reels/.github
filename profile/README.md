@@ -17,6 +17,5 @@
 
 ## The image below represents the workflow.
 
-<img width="8896" alt="Reels Sequence Diagram" src="https://user-images.githubusercontent.com/32415176/211588135-c92c14c0-47e4-4852-adb4-b40b103bf9bd.png">
-
+<img width="8896" alt="Reels Sequence Diagram" src="https://user-images.githubusercontent.com/32415176/211590727-59c1ddb0-d3f3-409c-83f2-123fe274d89b.png">
 
